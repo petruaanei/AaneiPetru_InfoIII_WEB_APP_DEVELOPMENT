@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Mercedes-Benz: Check-Out</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="branding">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+            <div class="logo-text">
+                <h1>Mercedes-Benz Check-Out</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="models.html">Models</a></li>
+                <li><a href="check-out.html">Check-Out</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+        </div>
+</header>
+
+<main class="container">
+    <section class="checkout-header">
+        <h2>Choose the model you want to buy</h2>
+    </section>
+    <section class="car-list">
+        <div class="car-model" onclick="selectCar(this,37475,'A-Class')">
+            <div class="car-image">
+            <img src="images/a_class.png" alt="A Class">
+            </div>
+           <div class="car-details">
+            <h3>Mercedes-Benz A-Class</h3>
+            <p class="model-price">37.475$</p>
+           </div>
+        </div>
+         <div class="car-model" onclick="selectCar(this,33981,'B-Class')">
+            <div class="car-image">
+            <img src="images/b_class.png" alt="B Class">
+            </div>
+           <div class="car-details">
+            <h3>Mercedes-Benz B-Class</h3>
+            <p class="model-price">33.981$</p>
+           </div>
+        </div>
+         <div class="car-model" onclick="selectCar(this,56655,'C-Class')">
+            <div class="car-image">
+            <img src="images/c_tmodell.png" alt="C Class">
+            </div>
+           <div class="car-details">
+            <h3>Mercedes-Benz C-Class T Model</h3>
+            <p class="model-price">56.655$</p>
+           </div>
+        </div>
+         <div class="car-model" onclick="selectCar(this,65289,'CLE')">
+            <div class="car-image">
+            <img src="images/cle.png" alt="A Class">
+            </div>
+           <div class="car-details">
+            <h3>Mercedes-Benz CLE Coupe</h3>
+            <p class="model-price">65.289$</p>
+           </div>
+        </div>
+         <div class="car-model" onclick="selectCar(this,72455,'E-Class')">
+            <div class="car-image">
+            <img src="images/E_class.png" alt="A Class">
+            </div>
+           <div class="car-details">
+            <h3>Mercedes-Benz E-Class</h3>
+            <p class="model-price">72.455$</p>
+           </div>
+        </div>
+         <div class="car-model" onclick="selectCar(this,231555,'G-Class')">
+            <div class="car-image">
+            <img src="images/g_class.png" alt="G Class">
+            </div>
+           <div class="car-details">
+            <h3>Mercedes-Benz G-Class</h3>
+            <p class="model-price">231.555$</p>
+           </div>
+        </div>
+         <div class="car-model" onclick="selectCar(this,150998,'GLS')">
+            <div class="car-image">
+            <img src="images/gls.png" alt="GLS">
+            </div>
+           <div class="car-details">
+            <h3>Mercedes-Benz GLS</h3>
+            <p class="model-price">150.998$</p>
+           </div>
+        </div>
+    </section>
+
+    <div class="checkout-card">
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1">
+            </div>
+        <button class="btn-calculate" onclick="execCalc()">Calculate Total</button>
+        <div id="Result" class="display-results hidden">
+            <div class="line">
+            <span>Model:</span>
+            <strong id="nameModel">-</strong> 
+            </div>
+            <div class="line">
+            <span>Vehicle Price:</span>
+            <span><span id="showBrut">0</span> $</span>
+            </div>
+            <div class="line discount-text">
+            <span>Discount(10%):</span>
+            <span>- <span id="showDiscount">0</span> $</span>
+            </div>
+            <div class="line total-line">
+            <span>Total Price:</span>
+            <strong><span id="showTotal">0</span> $</strong>
+            </div>
+            <div id="confirmationMsg" class="succes-msg">
+            <p>Thank you for choosing us!</p>
+            </div>
+        </div> 
+</main>
+
+<footer>
+    <p>&copy; 2025 Mercedes Benz. All rights reserved.<br>
+    email: cs.rou@cac.mercedes-benz.com<br>
+    tel: 0800 672 389</p>    
+</footer>
+</body>
+</html>
