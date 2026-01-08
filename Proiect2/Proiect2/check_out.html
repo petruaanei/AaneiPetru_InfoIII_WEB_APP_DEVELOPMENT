@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Out | Mercedes-Benz Dealer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+      <div class="brand">
+        <img src="images/logo.png" alt="Mercedes-Benz Logo" class="logo-img">
+        <h1 class="logo-text">Mercedes-Benz Dealer</h1>
+      </div>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="models.html">Models</a></li>
+          <li><a href="check_out.html">Check Out</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <section class="about">
+      <h2 class="page-title">Check Out</h2>
+      <p>
+        Click a model to select it. Then choose the quantity and calculate the total price with a 10% discount.
+      </p>
+    </section>
+
+    <!-- MODELS -->
+    <section class="models-list">
+
+      <article class="model-item selectable" data-model="A-Class" data-price="33900">
+        <img src="images/a_class.png" alt="Mercedes A-Class">
+        <div class="model-info">
+          <h3>Mercedes-Benz A-Class</h3>
+          <p class="price">Starting price: <strong>€33,900</strong></p>
+        </div>
+      </article>
+
+      <article class="model-item selectable" data-model="B-Class" data-price="36500">
+        <img src="images/b_class.png" alt="Mercedes B-Class">
+        <div class="model-info">
+          <h3>Mercedes-Benz B-Class</h3>
+          <p class="price">Starting price: <strong>€36,500</strong></p>
+        </div>
+      </article>
+
+      <article class="model-item selectable" data-model="C-Class" data-price="46900">
+        <img src="images/c_tmodell.png" alt="Mercedes C-Class">
+        <div class="model-info">
+          <h3>Mercedes-Benz C-Class</h3>
+          <p class="price">Starting price: <strong>€46,900</strong></p>
+        </div>
+      </article>
+
+      <article class="model-item selectable" data-model="CLE" data-price="57900">
+        <img src="images/cle.png" alt="Mercedes CLE">
+        <div class="model-info">
+          <h3>Mercedes-Benz CLE</h3>
+          <p class="price">Starting price: <strong>€57,900</strong></p>
+        </div>
+      </article>
+
+      <article class="model-item selectable" data-model="E-Class" data-price="62900">
+        <img src="images/e_class.png" alt="Mercedes E-Class">
+        <div class="model-info">
+          <h3>Mercedes-Benz E-Class</h3>
+          <p class="price">Starting price: <strong>€62,900</strong></p>
+        </div>
+      </article>
+
+      <article class="model-item selectable" data-model="G-Class" data-price="145000">
+        <img src="images/g_class.png" alt="Mercedes G-Class">
+        <div class="model-info">
+          <h3>Mercedes-Benz G-Class</h3>
+          <p class="price">Starting price: <strong>€145,000</strong></p>
+        </div>
+      </article>
+
+      <article class="model-item selectable" data-model="GLS" data-price="118900">
+        <img src="images/gls.png" alt="Mercedes GLS">
+        <div class="model-info">
+          <h3>Mercedes-Benz GLS</h3>
+          <p class="price">Starting price: <strong>€118,900</strong></p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- CHECKOUT BOX -->
+    <section class="checkout-box">
+      <h3>Order Summary</h3>
+
+      <p>
+        Selected model: <strong id="selectedModel">None</strong>
+      </p>
+
+      <div class="checkout-controls">
+        <label for="quantity">Quantity:</label>
+        <select id="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <button id="calculateBtn">Calculate (10% OFF)</button>
+      </div>
+
+      <div id="resultBox" class="result"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>
+        © 2026 Mercedes-Benz Dealer Romania<br>
+        Phone: 0800 672 389 | Email: contact@mercedesdealer.ro
+      </p>
+    </div>
+  </footer>
+
+  <!-- LINK TO JAVASCRIPT FILE -->
+  <script src="script.js"></script>
+
+</body>
+</html>

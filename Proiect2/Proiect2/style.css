@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: #e0e0e0;
+  color: #333;
+  line-height: 1.7;
+  font-size: 17px;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1;   /* împinge footer-ul în jos */
+  margin: 40px auto;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  border-bottom: 4px solid #00A19B; /* bara sub header */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo + brand */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 45px;
+  height: auto;
+  filter: invert(1);
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Navigation */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #c0c0c0;
+}
+
+/* MAIN */
+main {
+  margin: 40px auto;
+}
+
+.about {
+  margin-top: 40px;      /* distanță față de header */
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 900px;      /* nu se întinde prea mult */
+  margin-left: auto;
+  margin-right: auto;
+}
+.about p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+
+
+.models {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.car {
+  background: #fff;
+  padding: 15px;
+  width: 32%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.car img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.car h3 {
+  margin: 15px 0 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.page-title {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.models-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.model-item {
+  background: #fff;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.model-item img {
+  width: 260px;
+  max-width: 40%;
+  border-radius: 5px;
+}
+
+.model-info {
+  flex: 1;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Contact cards with AMG Petronas accent */
+.contact-item {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  border-left: 5px solid #00A19B; /* bara turcoaz în stânga */
+}
+
+.contact-item img {
+  width: 180px;
+  height: 180px;          /* toate imaginile au aceeași dimensiune */
+  object-fit: cover;     /* taie proporțional fără deformare */
+  margin-bottom: 10px;
+}
+
+
+.contact-item h3 {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.logo-text {
+  font-weight: 600;
+}
+
+.model-item.selectable.selected {
+  background-color: #d0d0d0;
+  border-color: #00A19B;
+  box-shadow: 0 0 15px rgba(0, 161, 155, 0.4);
+}
+
+.model-item.selectable {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Order Summary - centrat și separat */
+.checkout-box {
+  margin: 50px auto;        /* îl centrează */
+  background: #ffffff;
+  padding: 25px;
+  max-width: 500px;         /* nu ocupă toată pagina */
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  text-align: center;
+  border-top: 4px solid #00A19B; /* accent AMG Petronas */
+}
+
+.checkout-box h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.checkout-box .result {
+  margin-top: 15px;
+}
+
+.checkout-box .total {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Bara AMG Petronas pe cardurile de mașini (Home) */
+.car {
+  border-left: 5px solid #00A19B;
+}
+
+/* Bara AMG Petronas pe modelele din pagina Models + Check Out */
+.model-item {
+  border-left: 5px solid #00A19B;
+}

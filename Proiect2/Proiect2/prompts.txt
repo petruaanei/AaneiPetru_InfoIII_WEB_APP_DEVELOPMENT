@@ -1,0 +1,62 @@
+Pentru generarea site-ului am folosit ChatGPT. Mai jos sunt prompturile folosite:
+
+1).
+Vreau un cod pentru html ce reprezinta un site Mercedes Benz Dealer, vreau sa contina header in care sa fie meniul de navigare catre home, models,
+check out, contact us , footer in care sa fie informatii despre firma,
+si in main 3 imagini cu 3 modele de masina si cu o mica descriere despre firma intr un paragraph
+
+2). 
+Nu vreau sa fie css facut deodata in html, vreau sa am fisierul separat de style.css
+
+3).
+Vreau sa mai adaugi si langa textul de mercedes benz dealer un logo, am deja imaginea in folderul images cu logo.png,
+doar ca e negru, vreau sa faci cumva sa se vada si logo mercedes bine
+
+4).
+Vreau sa imi faci si pagina models, unde se pastreaza acelasi header si footer ca in home.html.
+vreau ca modelele de masini sa fie una sub alta, masinile sunt: a class, b class, c class, cle, e class, g class, gls,
+imaginile sunt deja in folderul images. vreau sa fie afisate preturile fiecarei masini
+
+5).
+vreau sa imi faci si pagina check_out.html unde se pastreaza acelasi header si footer, si sa fie exact ca pagina models
+la aspect, incluzand toate modelele de masina si cu pretul lor
+
+6).
+vreau sa imi faci si pagina contact ce are acelasi footer si header, si in ea sa fie 4 imagini deja din folderul images cu numele 
+assistance1,2,3,4.png, in care sa fie numerele de telefon si emailul pentru site ul meu
+
+7).
+vreau ca imaginile de la contact.html sa fie asezate 2 cate 2, nu toate pe un rand si imaginile sa aiba aceleasi dimensiuni 
+
+8).
+vreau la pagina check_out.html sa folosesc o functie javascript pentru a calcula discount de 10% la modelul selectat. 
+cand apas pe un model sa se vada ca este selectat modelul respectiv, apoi in josul paginii sa apara un meniu mic unde selectez 
+cantitatea de masini, apoi sa dau pe butonul calculate si sa imi arate pretul cu reducerea aplicata
+
+9).
+fa mi te rog si la css sa fie fundalul la toate paginile de la site sa fie putin mai inchis la culoare, un gri
+
+10).
+la home.html vreau sa fie footerul mai in jos, sa fie pagina fara spatiu jos
+
+11).
+vreau ca scrisul sa fie putin mai mare pe toate paginile, sa fie mai lizibil
+
+12). 
+vreau un font mai interesant, ceva mai modern 
+
+13). 
+as vrea la pagina home unde e descrierea in paragraf sa fie o distanta fata de header, pare prea lipt.
+as vrea si o bara sub header, si descrierea mai centrata
+
+14).
+la check_out.html vreau sa se vada cand selectez un model anume, vreau sa fie fundalul mai inchis cand dau click pe el
+
+15).
+la finalul paginii de checkout, vreau sa fie order summary intr un chenar separat, centrat
+
+16).
+vreau si la contact us la fiecare chenar cu cate o asistenta, sa fie bara aia turcoaz in stanga
+
+17).
+vreau aceeasi bara si pe pagina home la imagini si pe pagina models
